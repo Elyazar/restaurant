@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Angelface';
+  src: url('../fonts/Angelface.eot');
+  src: url('../fonts/Angelface.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Angelface.woff') format('woff');
+  src: url('../fonts/Angelface.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@mixin angel {
+  font-family: 'Angelface';
+}
+@mixin lobster {
+  font-family: 'Lobster';
+}
+@mixin pinyon {
+  font-family: 'Pinyon Script';
+}
+@mixin roboto {
+  font-family: 'Roboto';
+}
