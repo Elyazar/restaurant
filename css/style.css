@@ -39,6 +39,10 @@
   font-style: normal;
 }
 
+.slv__slide {
+  height: 100vh;
+}
+
 .menu {
   max-width: 830px;
   margin: auto;
@@ -76,7 +80,18 @@
 
 .nav__link:hover {
   border: 2px solid #ffffff;
-  border-radius: 4px;
+  border-radius: 5px;
+  padding: 12px 36px;
+}
+
+.layer-slide {
+  position: absolute;
+  z-index: 99;
+  top: 300px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo__title {

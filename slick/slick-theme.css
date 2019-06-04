@@ -23,32 +23,31 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
-
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 103px;
+    height: 103px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
     cursor: pointer;
-
-    color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: url(../img/arrows/arrow.png);
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    
     outline: none;
-    background: transparent;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -95,38 +94,25 @@
     content: '→';
 }
 
-.slick-next
-{
-    right: -25px;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
 .slick-next:before
 {
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
+    content: '';
+    background-image: url(../img/arrows/arrow.png);
+    background-repeat: no-repeat;
 }
 
 /* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
+
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
 
     display: block;
-
-    width: 100%;
     padding: 0;
     margin: 0;
 
@@ -138,10 +124,8 @@
 {
     position: relative;
 
-    display: inline-block;
+    display: inline;
 
-    width: 20px;
-    height: 20px;
     margin: 0 5px;
     padding: 0;
 
@@ -182,23 +166,25 @@
     line-height: 20px;
 
     position: absolute;
-    top: 0;
-    left: 0;
 
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    border-radius: 60px;
     text-align: center;
 
-    opacity: .25;
-    color: black;
+    opacity:.25;
+    color: rgb(255, 255, 255);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: 1;
+    color: rgb(255, 255, 255);
 }

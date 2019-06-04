@@ -27,6 +27,7 @@
 
     margin: 0;
     padding: 0;
+    background-image: url(../img/slider/slide.png);
 }
 .slick-list:focus
 {
@@ -81,6 +82,7 @@
 
     height: 100%;
     min-height: 1px;
+    background-image: url(../img/slider/slide.png)
 }
 [dir='rtl'] .slick-slide
 {
@@ -113,5 +115,5 @@
     height: auto;
 }
 .slick-arrow.slick-hidden {
-    display: none;
+    display: block;
 }
