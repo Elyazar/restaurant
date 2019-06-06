@@ -1,0 +1,51 @@
+.food
+  &__subtitle
+    text-transform: uppercase
+  &__type
+    display: flex
+    justify-content: space-between
+    max-width: 720px
+    margin: 90px auto
+  &__separating
+    margin: 45px 0
+.price
+  display: flex
+  justify-content: space-around
+  margin-bottom: 100px
+  &__img
+    margin-right: 30px
+  &__card
+    display: flex
+    align-items: center
+  &__title
+    font-size: 20px
+    font-weight: 500
+    +roboto
+    text-transform: uppercase
+    display: block
+    margin-bottom: 20px
+  &__subtitle
+    display: block
+    margin-bottom: 30px
+  &__old
+    font-size: 30px
+    color: #dadada
+    +lobster
+    text-decoration: line-through
+    font-weight: 400
+    margin-right: 20px
+  &__new
+    font-size: 30px
+    +lobster
+    color: #a84a3e
+    font-weight: 400
+    cursor: pointer
+  &__button
+    text-transform: uppercase
+    color: #222222
+    border-color: #262626
+    border-radius: 14px
+    margin-bottom: 140px
+    &:hover
+      border-color: #a84a3e
+      color: #a84a3e
