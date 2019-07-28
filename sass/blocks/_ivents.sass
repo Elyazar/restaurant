@@ -32,3 +32,22 @@
     line-height: 22px
     font-weight: 500
     margin-bottom: 45px
+  &__box-img
+    display: flex
+    margin: auto
+    max-width: 369px
+  &__img
+    width: 100%
+    height: auto
+  &__img-adaptive1250
+    display: none
+@media (max-width: 1250px)
+  .cards
+    display: block
+    &__img-adaptive1250
+      display: block
+      margin: auto
+    &__img-default
+      display: none
+    &__ivent
+      margin-right: 0

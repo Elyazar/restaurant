@@ -1,10 +1,10 @@
-.footer
-  height: 250px
+footer
   padding-top: 80px
-  &__menu
-    max-width: 830px
-    margin: auto
-    margin-bottom: 45px
+  padding-bottom: 80px
+.footer
+  max-width: 830px
+  margin: auto
+  margin-bottom: 45px
   &__ul
     display: flex
     justify-content: space-between
@@ -19,5 +19,26 @@
     color: #000000
     &:hover
       color: #a84a3e
-  &__social
-    margin-bottom: 80px
+@media (max-width: 899px)
+  .footer
+    margin: auto 30px
+    margin-bottom: 35px
+@media (max-width: 620px)
+  footer
+    display: flex
+    justify-content: center
+  .footer
+    margin-bottom: 0
+    &__social
+      display: flex
+    &__ul
+      flex-direction: column
+      text-align: center
+    &__li
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+  .social__wrap
+    display: flex
+    flex-direction: column
+    text-align: center

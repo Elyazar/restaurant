@@ -8,12 +8,40 @@
     margin: 90px auto
   &__separating
     margin: 45px 0
+    overflow: hidden
+  &__separating-adaptive1199
+    overflow: hidden
+    margin: 45px 0
+    display: none
+  &__icon
+    width: 130px
+    height: 130px
+    border-radius: 70px
+    position: relative
+    border: 2px solid #000000
+    border-radius: 70px
+    &:hover
+      background-color: rgb(172,83,72)
+      border-color: #A84A3E
+      .food__black
+        display: none
+      .food__white
+        display: block
+  &__black, &__white
+    text-align: center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  &__white
+    display: none
 .price
   display: flex
   justify-content: space-around
   margin-bottom: 100px
   &__img
     margin-right: 30px
+    border-radius: 60px
   &__card
     display: flex
     align-items: center
@@ -47,3 +75,45 @@
     &:hover
       border-color: #a84a3e
       color: #a84a3e
+@media (max-width: 1199px)
+  .price
+    flex-direction: column
+    &__card
+      justify-content: center
+  .food__separating
+    display: flex
+    justify-content: center
+    &-adaptive1199
+      display: flex
+      justify-content: center
+@media (max-width: 768px)
+  .food
+    &__icon
+      width: 100px
+      height: 100px
+    &__type
+      max-width: 550px
+@media (max-width: 499px)
+  .price
+    &__card
+      flex-direction: column
+      text-align: center
+    &__img
+      margin-right: 0
+      margin-bottom: 35px
+  .food
+    &__icon
+      width: 80px
+      height: 80px
+    &__type
+      max-width: 450px
+      margin-top: 40px
+@media (max-width: 320px)
+  .food
+    &__icon
+      width: 65px
+      height: 65px
+    &__black, &__white
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)

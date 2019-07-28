@@ -4,6 +4,9 @@ $(function(){
       verticalSwiping: true,
       slidesToShow: 1,
       dots: true,
-      prevArrow: $('.prev'),
+      autoplay: true,
+      autoplaySpeed: 3000,
+      adaptiveHeight: true,
+      arrows: false,
   });
 });

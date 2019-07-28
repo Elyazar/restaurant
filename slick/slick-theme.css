@@ -19,27 +19,9 @@
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
-    line-height: 0;
+    
+    display: none;
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    display: block;
-
-    width: 103px;
-    height: 103px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: url(../img/arrows/arrow.png);
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -187,4 +169,14 @@
 {
     opacity: 1;
     color: rgb(255, 255, 255);
+}
+@media (max-width: 768px){
+    .slick-dots li button{
+        width: 10px;
+        height: 10px;
+    }
+    .slick-dots li button:before{
+        width: 10px;
+        height: 10px;
+    }
 }

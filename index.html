@@ -26,43 +26,43 @@
 
 <body>
 
-  <header class="header">
-    <div class="menu">
-      <div class="menu__wrap">
-        <div class="nav menu__nav">
-          <a href="#" class="nav__link">home</a>
-          <a href="#" class="nav__link">servise</a>
-          <a href="#" class="nav__link">menu</a>
-          <a href="#" class="nav__link">reservation</a>
-          <a href="#" class="nav__link">events</a>
-          <a href="#" class="nav__link">contact</a>
-        </div>
-      </div>
-    </div>
+  <header id="header" class="header">
+    <nav class="menu__wrap">
+      <ul class="menu">
+        <li class="menu__li"><a href="#header" class="menu__link">home</a></li>
+        <li class="menu__li"><a href="#restaurant" class="menu__link">servise</a></li>
+        <li class="menu__li"><a href="#menu" class="menu__link">menu</a></li>
+        <li class="menu__li"><a href="#reservation" class="menu__link">reservation</a></li>
+        <li class="menu__li"><a href="#events" class="menu__link">events</a></li>
+        <li class="menu__li"><a href="#contacts" class="menu__link">contact</a></li>
+        </li>
+      </ul>
+    </nav>
+
     <div class="slv">
       <div class="slv__wrap">
         <div class="slv__slide">
-          <img src="img/slider/slide.png" alt="">
+          <img class="slv__slide-img" src="img/slider/slide.png" alt="slide">
         </div>
       </div>
       <div class="slv__wrap">
         <div class="slv__slide">
-          <img src="img/slider/slide.png" alt="">
+          <img class="slv__slide-img" src="img/slider/slide.png" alt="slide">
         </div>
       </div>
       <div class="slv__wrap">
         <div class="slv__slide">
-          <img src="img/slider/slide.png" alt="">
+          <img class="slv__slide-img" src="img/slider/slide.png" alt="slide">
         </div>
       </div>
       <div class="slv__wrap">
         <div class="slv__slide">
-          <img src="img/slider/slide.png" alt="">
+          <img class="slv__slide-img" src="img/slider/slide.png" alt="slide">
         </div>
       </div>
       <div class="slv__wrap">
         <div class="slv__slide">
-          <img src="img/slider/slide.png" alt="">
+          <img class="slv__slide-img" src="img/slider/slide.png" alt="slide">
         </div>
       </div>
     </div>
@@ -74,15 +74,17 @@
       </div>
       <div class="social">
         <div class="social__wrap">
-          <a href="#" class="social__icons"> <img src="img/social/facebook.png" alt="social"></a>
-          <a href="#" class="social__icons"><img src="img/social/tweet.png" alt="social"></a>
-          <a href="#" class="social__icons"> <img src="img/social/google+.png" alt="social"></a>
+          <a href="#" class="social__icons"><img class="social__img" src="img/social/facebook.png" alt="social"></a>
+          <a href="#" class="social__icons"><img class="social__img" src="img/social/tweet.png" alt="social"></a>
+          <a href="#" class="social__icons"><img class="social__img" src="img/social/google+.png" alt="social"></a>
         </div>
       </div>
     </div>
+
+    <a href="#restaurant" id="anchor" class="anchor"><img src="img/arrows/arrow.png" alt="link" class="anchor__img"></a>
   </header>
 
-  <section>
+  <section id="restaurant">
     <div class="restaurant">
       <div class="container">
         <div class="description-wrap">
@@ -95,23 +97,56 @@
               odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>
         </div>
         <div class="servises">
-          <div class="servises__type"><img class="servises__img" src="img/servises/img-1.png" alt=""></div>
-          <div class="servises__type"><img class="servises__img" src="img/servises/img-2.png" alt=""></div>
-          <div class="servises__type"><img class="servises__img" src="img/servises/img-3.png" alt=""></div>
+
+          <div class="servises__type">
+            <img class="servises__img" src="img/servises/img-1.png" alt="">
+            <div class="servises__box-text">
+              <span class="servises__text">
+                originally <br> roasted coffee
+              </span>
+            </div>
+          </div>
+
+          <div class="servises__type">
+            <img class="servises__img" src="img/servises/img-2.png" alt="">
+            <div class="servises__box-text">
+              <span class="servises__text">
+                originally <br> roasted coffee
+              </span>
+            </div>
+          </div>
+
+          <div class="servises__type">
+            <img class="servises__img" src="img/servises/img-3.png" alt="">
+            <div class="servises__box-text">
+              <span class="servises__text">
+                originally <br> roasted coffee
+              </span>
+            </div>
+          </div>
+
         </div>
         <div class="galery">
-          <div class="galery__block-left"><img src="img/servises/img1.png" alt="" class="galery__img"></div>
+          <div class="galery__block-left galery__img-size1">
+            <img src="img/servises/img1.png" alt="photo" class="galery__img">
+          </div>
           <div class="galery__block-right">
-            <img src="img/servises/img2.png" alt="" class="galery__img-1">
-            <img src="img/servises/img3.png" alt="" class="galery__img-2">
-            <img src="img/servises/img4.png" alt="" class="galery__img">
+            <div class="galery__block-rtop">
+              <div class="galery__img-size2">
+                <img src="img/servises/img2.png" alt="photo" class="galery__img-1">
+              </div>
+              <div class="galery__img-size3">
+                <img src="img/servises/img3.png" alt="photo" class="galery__img-2">
+              </div>
+            </div>
+            <div class="galery__img-size4"><img src="img/servises/img4.png" alt="photo" class="galery__img"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="menu">
     <div class="container">
       <div class="food">
         <div class="description-wrap">
@@ -120,25 +155,42 @@
             <p class="food__subtitle subtitle">showcase your site visitors the best menu, specialty restaurants to
               attract your potential customers</p>
         </div>
+
         <div class="food__type">
-          <div class="food__img"><img src="img/food/img-1.png" alt=""></div>
-          <div class="food__img"><img src="img/food/img-2.png" alt=""></div>
-          <div class="food__img"><img src="img/food/img-3.png" alt=""></div>
-          <div class="food__img"><img src="img/food/img-4.png" alt=""></div>
+
+            <div class="food__icon">
+              <img class="food__black" src="img/food/img-1.png" alt="">
+              <img class="food__white" src="img/food/img-1w.png" alt="">
+            </div>
+            <div class="food__icon">
+              <img class="food__black" src="img/food/img-2.png" alt="">
+              <img class="food__white" src="img/food/img-2w.png" alt="">
+            </div>
+
+            <div class="food__icon">
+              <img class="food__black" src="img/food/img-3.png" alt="">
+              <img class="food__white" src="img/food/img-3w.png" alt="">
+            </div>
+            <div class="food__icon">
+              <img class="food__black" src="img/food/img-4.png" alt="">
+              <img class="food__white" src="img/food/img-4w.png" alt="">
+            </div>
+
         </div>
+
         <!-- /.food__type -->
         <div class="price">
           <div class="price__left">
             <div class="price__card">
-              <img src="img/food/img1.png" alt="" class="price__img">
+              <div><img src="img/food/img1.png" alt="" class="price__img"></div>
               <div class="prise__text">
-                <span class="price__title">Fresh salad simple</span>
+                <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
-                <span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span>
+                <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
                 <!-- /.price__subtitle subtitle -->
-                <span class="price__old">$29,99</span>
-                <!-- /.price__old -->
-                <span class="price__new">$25,99</span>
+                <div><span class="price__old">$29,99</span>
+                  <!-- /.price__old -->
+                  <span class="price__new">$25,99</span></div>
                 <!-- /.price__new -->
               </div>
               <!-- /.prise__text -->
@@ -146,32 +198,33 @@
             <!-- /.price__card -->
             <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
             <div class="price__card">
-              <img src="img/food/img2.png" alt="" class="price__img">
+              <div><img src="img/food/img2.png" alt="" class="price__img"></div>
               <div class="prise__text">
-                <span class="price__title">Fresh salad simple</span>
+                <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
-                <span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span>
+                <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
                 <!-- /.price__subtitle subtitle -->
-                <span class="price__old">$29,99</span>
-                <!-- /.price__old -->
-                <span class="price__new">$19,99</span>
+                <div><span class="price__old">$29,99</span>
+                  <!-- /.price__old -->
+                  <span class="price__new">$19,99</span></div>
                 <!-- /.price__new -->
               </div>
               <!-- /.prise__text -->
             </div>
             <!-- /.price__card -->
+            <div class="food__separating-adaptive1199"><img src="img/food/separator.png" alt=""></div>
           </div>
           <div class="price__right">
             <div class="price__card">
-              <img src="img/food/img3.png" alt="" class="price__img">
+              <div><img src="img/food/img3.png" alt="" class="price__img"></div>
               <div class="prise__text">
-                <span class="price__title">Fresh salad simple</span>
+                <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
-                <span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span>
+                <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
                 <!-- /.price__subtitle subtitle -->
-                <span class="price__old">$29,99</span>
-                <!-- /.price__old -->
-                <span class="price__new">$13,99</span>
+                <div><span class="price__old">$29,99</span>
+                  <!-- /.price__old -->
+                  <span class="price__new">$13,99</span></div>
                 <!-- /.price__new -->
               </div>
               <!-- /.prise__text -->
@@ -179,15 +232,15 @@
             <!-- /.price__card -->
             <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
             <div class="price__card">
-              <img src="img/food/img4.png" alt="" class="price__img">
+              <div><img src="img/food/img4.png" alt="" class="price__img"></div>
               <div class="prise__text">
-                <span class="price__title">Fresh salad simple</span>
+                <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
-                <span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span>
+                <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
                 <!-- /.price__subtitle subtitle -->
-                <span class="price__old">$29,99</span>
-                <!-- /.price__old -->
-                <span class="price__new">$27,99</span>
+                <div><span class="price__old">$29,99</span>
+                  <!-- /.price__old -->
+                  <span class="price__new">$27,99</span></div>
                 <!-- /.price__new -->
               </div>
               <!-- /.prise__text -->
@@ -205,9 +258,9 @@
     <!-- /.container -->
   </section>
 
-  <section>
+  <section id="reservation">
     <div class="form">
-      <div class="container">
+      <div class="container1">
         <div class="reservation">
           <h1 class="reservation__title title">reservation</h1>
           <!-- /.reservation__title title -->
@@ -222,21 +275,24 @@
             <a class="contacts__number" href="tel:+79121234567">+7 912 123-45-67</a>
           </div>
           <!-- /.contacts -->
-          <div class="recording">
-            <div class="recording__input-box">
-              <input type="text" placeholder="Name" class="recording__input">
+          <form action="">
+            <img class="form__bg" src="img/form/form-bg.png" alt="">
+            <div class="recording">
+              <div class="recording__input-box">
+                <input type="text" placeholder="Name,Surname" class="recording__input">
+              </div>
+              <div class="recording__input-box">
+                <input type="date" placeholder="Day" class="recording__input">
+              </div>
+              <div class="recording__input-box">
+                <input type="time" placeholder="Hour" class="recording__input">
+              </div>
             </div>
-            <div class="recording__input-box">
-              <input type="text" placeholder="Day" class="recording__input">
+            <!-- /.recording -->
+            <div class="wrap-position"><button class="button reservation__button">book a table</button>
+              <!-- /.button reservation__button -->
             </div>
-            <div class="recording__input-box">
-              <input type="text" placeholder="Hour" class="recording__input">
-            </div>
-          </div>
-          <!-- /.recording -->
-          <div class="wrap-position"><button class="button reservation__button">book a table</button>
-            <!-- /.button reservation__button -->
-          </div>
+          </form>
         </div>
         <!-- /.reservation -->
       </div>
@@ -245,95 +301,88 @@
     <!-- /.form -->
   </section>
 
-  <section>
+  <section id="events">
     <div class="ivents">
       <div class="container">
         <h1 class="ivents__title title">ivents</h1>
-        <!-- /.ivents__title title -->
         <span class="ivents__subtitle subtitle">Present in an elegant way events in your restaurant, to encourage
           visitors to visit</span>
-        <!-- /.ivents__subtitle subtitle -->
+
         <div class="cards">
+
           <div class="cards__ivent">
-            <img src="img/ivent/ivent-img-1.png" alt="">
+            <div class="cards__box-img"><img class="cards__img" src="img/ivent/ivent-img-1.png" alt=""></div>
             <div class="cards__text">
               <h2 class="cards__title-before">10 february 2015</h2>
-              <!-- /.cards__title-before -->
               <h1 class="cards__title">wine Tasting</h1>
-              <!-- /.cards__title -->
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
-              <!-- /.cards__subtitle subtitle -->
             </div>
           </div>
-          <!-- /.cards__ivent -->
+
           <div class="cards__ivent">
+            <div class="cards__box-img"><img class="cards__img cards__img-adaptive1250" src="img/ivent/ivent-img-2.png"
+                alt=""></div>
             <div class="cards__text">
               <h2 class="cards__title-before">15 february 2015</h2>
-              <!-- /.cards__title-before -->
               <h1 class="cards__title">chocolate event</h1>
-              <!-- /.cards__title -->
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
-              <!-- /.cards__subtitle subtitle -->
             </div>
-            <img src="img/ivent/ivent-img-2.png" alt="">
+            <div class="cards__box-img"><img class="cards__img cards__img-default" src="img/ivent/ivent-img-2.png"
+                alt=""></div>
           </div>
-          <!-- /.cards__ivent -->
+
           <div class="cards__ivent">
-            <img src="img/ivent/ivent-img-3.png" alt="">
+            <div class="cards__box-img"><img class="cards__img" src="img/ivent/ivent-img-3.png" alt=""></div>
             <div class="cards__text">
               <h2 class="cards__title-before">25 february 2015</h2>
-              <!-- /.cards__title-before -->
               <h1 class="cards__title">strawberry decoration</h1>
-              <!-- /.cards__title -->
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
-              <!-- /.cards__subtitle subtitle -->
             </div>
           </div>
-          <!-- /.cards__ivent -->
         </div>
-        <!-- /.cards -->
       </div>
-      <!-- /.container -->
     </div>
-    <!-- /.ivents -->
   </section>
-<section>
+
+  <section id="contacts">
     <div class="map">
-        <img class="map__img" src="img/map/map-img.png" alt="map">
-        <div class="map__contacts">
-          <h1 class="map__title">primavera</h1>
-          <span class="map__adress">Frederic Chopin St. 454/52, 00-000 Rome</span>
-          <div class="map__phone">
-            <a href="tel:+79121234567">P. +7 912 123-45-67 - </a>
-            <a href="tel:+79121234567">+7 912 123-45-67</a>
-          </div>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.229733262998!2d12.491487535460234!3d41.90941987718345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1559936349288!5m2!1sru!2sua" width="100%" height="425px" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-</section>
-  <footer>
-      <div class="footer">
-        <div class="footer__menu">
-          <ul class="footer__ul">
-            <li class="footer__li"><a class="footer__link" href="#">home</a></li>
-            <li class="footer__li"><a class="footer__link" href="#">restaurant</a></li>
-            <li class="footer__li"><a class="footer__link" href="#">menu</a></li>
-            <li class="footer__li"><a class="footer__link" href="#">reservation</a></li>
-            <li class="footer__li"><a class="footer__link" href="#">ivents</a></li>
-            <li class="footer__li"><a class="footer__link" href="#">contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__social social">
-          <div class="social__wrap">
-            <a href="#" class="social__icons"><img src="img/social/facebook-gr.png" alt="social"></a>
-            <a href="#" class="social__icons"><img src="img/social/tweet-gr.png" alt="social"></a>
-            <a href="#" class="social__icons"><img src="img/social/google+-gr.png" alt="social"></a>
-          </div>
+      <img class="map__img" src="img/map/map-img.png" alt="map">
+      <div class="map__contacts">
+        <h1 class="map__title">primavera</h1>
+        <span class="map__adress">Frederic Chopin St. 454/52, 00-000 Rome</span>
+        <div class="map__phone">
+          <a href="tel:+79121234567">P. +7 912 123-45-67 - </a>
+          <a href="tel:+79121234567">+7 912 123-45-67</a>
         </div>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.229733262998!2d12.491487535460234!3d41.90941987718345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1559936349288!5m2!1sru!2sua"
+        width="100%" height="425px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <nav class="footer">
+      <ul class="footer__ul">
+        <li class="footer__li"><a class="footer__link" href="#header">home</a></li>
+        <li class="footer__li"><a class="footer__link" href="#restaurant">restaurant</a></li>
+        <li class="footer__li"><a class="footer__link" href="#menu">menu</a></li>
+        <li class="footer__li"><a class="footer__link" href="#reservation">reservation</a></li>
+        <li class="footer__li"><a class="footer__link" href="#events">ivents</a></li>
+        <li class="footer__li"><a class="footer__link" href="#contacts">contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer__social social">
+      <div class="social__wrap">
+        <a href="#" class="social__icons"><img src="img/social/facebook-gr.png" alt="social"></a>
+        <a href="#" class="social__icons"><img src="img/social/tweet-gr.png" alt="social"></a>
+        <a href="#" class="social__icons"><img src="img/social/google+-gr.png" alt="social"></a>
+      </div>
+    </div>
+    </div>
   </footer>
 
 
@@ -341,6 +390,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/animation-following.js"></script>
 
 </body>
 

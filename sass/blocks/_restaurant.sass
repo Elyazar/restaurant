@@ -5,18 +5,109 @@
   display: flex
   justify-content: space-around
   margin-bottom: 140px
+  &__type
+    width: 163px
+    height: 163px
+    transform: rotate(-45deg)
+    border-radius: 8px
+    position: relative
+  &__img
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(45deg)
+  &__box-text
+    width: 163px
+    height: 163px
+    position: relative
+    border: 2px solid #000000
+    border-radius: 8px
+    &:hover
+      background-color: rgba(172,83,72,0.95)
+      border-color: #A84A3E
+      .servises__text
+        display: block
+  &__text
+    width: 132px
+    color: #ffffff
+    text-align: center
+    font-size: 16px
+    +roboto
+    font-weight: 500
+    line-height: 28px
+    text-transform: uppercase
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(45deg)
+    display: none
 
 .galery
   display: flex
+  &__img
+    width: 100%
+    height: auto
   &__img-1
-    margin-right: 6px
-    margin-bottom: 8px
+    width: 100%
+    height: auto
   &__img-2
-    margin-bottom: 8px
-
+    width: 100%
+    height: auto
+  &__img-size1
+    max-width: 485px
+  &__img-size2
+    max-width: 189px
+    margin-right: 10px
+  &__img-size3
+    max-width: 470px
+  &__img-size4
+    max-width: 669px
   &__block
     &-left
       margin-right: 15px
-@media (max-width: 1299px)
+    &-rtop
+      display: flex
+      margin-bottom: 8px
+@media (max-width: 991px)      
+  .galery__block-rtop
+    margin-bottom: 5px
+@media (max-width: 768px) 
+  .servises
+    &__type
+      width: 120px
+      height: 120px
+    &__box-text
+      width: 120px
+      height: 120px
+    &__img
+      width: 50%
+@media (max-width: 707px)
   .galery
-    display: block
+    flex-direction: column
+    &__img-size1
+      max-width: 100%
+      margin-right: 0
+      margin-bottom: 6px
+    &__img-size3
+      max-width: 100%
+    &__img-size4
+      max-width: 100%
+    &__block
+      &-right
+        width: 100%
+      &-rtop
+        width: 100%      
+@media (max-width: 570px)
+  .servises
+    margin-bottom: 100px
+    &__type
+      width: 90px
+      height: 90px
+    &__box-text
+      width: 90px
+      height: 90px
+    &__img
+      width: 50%
+  .description-wrap
+    &__subtitle
+      margin-bottom: 60px
