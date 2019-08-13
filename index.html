@@ -35,9 +35,21 @@
         <li class="menu__li"><a href="#reservation" class="menu__link">reservation</a></li>
         <li class="menu__li"><a href="#events" class="menu__link">events</a></li>
         <li class="menu__li"><a href="#contacts" class="menu__link">contact</a></li>
-        </li>
+        <div class="social__menu">
+          <div class="social__wrap-menu">
+            <a href="#" class="social__icons"><img class="social__img" src="img/social/facebook.png" alt="social"></a>
+            <a href="#" class="social__icons"><img class="social__img" src="img/social/tweet.png" alt="social"></a>
+            <a href="#" class="social__icons"><img class="social__img" src="img/social/google+.png" alt="social"></a>
+          </div>
+        </div>
       </ul>
     </nav>
+
+    <button class="menu__button">
+      <a class="menu__btn" href="#">
+        <span></span>
+      </a>
+    </button>
 
     <div class="slv">
       <div class="slv__wrap">
@@ -72,7 +84,7 @@
         <span class="logo__title">Primavera</span>
         <span class="logo__subtitle">oriental servise</span>
       </div>
-      <div class="social">
+      <div class="social social__none">
         <div class="social__wrap">
           <a href="#" class="social__icons"><img class="social__img" src="img/social/facebook.png" alt="social"></a>
           <a href="#" class="social__icons"><img class="social__img" src="img/social/tweet.png" alt="social"></a>
@@ -81,20 +93,24 @@
       </div>
     </div>
 
-    <a href="#restaurant" id="anchor" class="anchor"><img src="img/arrows/arrow.png" alt="link" class="anchor__img"></a>
+    <button id="anchor">
+      <a href="#restaurant" class="anchor">
+        <img src="img/arrows/arrow.png" alt="link" class="anchor__arrow">
+      </a>
+    </button>
   </header>
 
   <section id="restaurant">
     <div class="restaurant">
       <div class="container">
         <div class="description-wrap">
-          <h class="description-wrap__title title">restaurant</h1>
-            <div class="description-wrap__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
-            <p class="description-wrap__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit
-              voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-              architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-              odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>
+          <h1 class="description-wrap__title title">restaurant</h1>
+          <div class="description-wrap__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
+          <p class="description-wrap__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit
+            voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+            odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>
         </div>
         <div class="servises">
 
@@ -150,31 +166,31 @@
     <div class="container">
       <div class="food">
         <div class="description-wrap">
-          <h class="food__title title">menu</h1>
-            <div class="food__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
-            <p class="food__subtitle subtitle">showcase your site visitors the best menu, specialty restaurants to
-              attract your potential customers</p>
+          <h2 class="food__title title">menu</h2>
+          <div class="food__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
+          <p class="food__subtitle subtitle">showcase your site visitors the best menu, specialty restaurants to
+            attract your potential customers</p>
         </div>
 
         <div class="food__type">
 
-            <div class="food__icon">
-              <img class="food__black" src="img/food/img-1.png" alt="">
-              <img class="food__white" src="img/food/img-1w.png" alt="">
-            </div>
-            <div class="food__icon">
-              <img class="food__black" src="img/food/img-2.png" alt="">
-              <img class="food__white" src="img/food/img-2w.png" alt="">
-            </div>
+          <div class="food__icon">
+            <img class="food__black" src="img/food/img-1.png" alt="">
+            <img class="food__white" src="img/food/img-1w.png" alt="">
+          </div>
+          <div class="food__icon">
+            <img class="food__black" src="img/food/img-2.png" alt="">
+            <img class="food__white" src="img/food/img-2w.png" alt="">
+          </div>
 
-            <div class="food__icon">
-              <img class="food__black" src="img/food/img-3.png" alt="">
-              <img class="food__white" src="img/food/img-3w.png" alt="">
-            </div>
-            <div class="food__icon">
-              <img class="food__black" src="img/food/img-4.png" alt="">
-              <img class="food__white" src="img/food/img-4w.png" alt="">
-            </div>
+          <div class="food__icon">
+            <img class="food__black" src="img/food/img-3.png" alt="">
+            <img class="food__white" src="img/food/img-3w.png" alt="">
+          </div>
+          <div class="food__icon">
+            <img class="food__black" src="img/food/img-4.png" alt="">
+            <img class="food__white" src="img/food/img-4w.png" alt="">
+          </div>
 
         </div>
 
@@ -262,7 +278,7 @@
     <div class="form">
       <div class="container1">
         <div class="reservation">
-          <h1 class="reservation__title title">reservation</h1>
+          <h3 class="reservation__title title">reservation</h3>
           <!-- /.reservation__title title -->
           <span class="reservation__subtitle subtitle">quick and easy to book a table by phone or reservation
             form</span>
@@ -279,13 +295,15 @@
             <img class="form__bg" src="img/form/form-bg.png" alt="">
             <div class="recording">
               <div class="recording__input-box">
-                <input type="text" placeholder="Name,Surname" class="recording__input">
+                <input type="text" placeholder="Name" class="recording__input">
               </div>
               <div class="recording__input-box">
-                <input type="date" placeholder="Day" class="recording__input">
+                <input type="text" placeholder="Day" onfocus="(this.type='date')"
+                  onblur="if(this.value==''){this.type='text'}" class="recording__input">
               </div>
               <div class="recording__input-box">
-                <input type="time" placeholder="Hour" class="recording__input">
+                <input type="text" placeholder="Hour" onfocus="(this.type='time')"
+                  onblur="if(this.value==''){this.type='text'}" class="recording__input">
               </div>
             </div>
             <!-- /.recording -->
@@ -302,10 +320,10 @@
   </section>
 
   <section id="events">
-    <div class="ivents">
+    <div class="events">
       <div class="container">
-        <h1 class="ivents__title title">ivents</h1>
-        <span class="ivents__subtitle subtitle">Present in an elegant way events in your restaurant, to encourage
+        <h4 class="events__title title">events</h4>
+        <span class="events__subtitle subtitle">Present in an elegant way events in your restaurant, to encourage
           visitors to visit</span>
 
         <div class="cards">
@@ -313,8 +331,8 @@
           <div class="cards__ivent">
             <div class="cards__box-img"><img class="cards__img" src="img/ivent/ivent-img-1.png" alt=""></div>
             <div class="cards__text">
-              <h2 class="cards__title-before">10 february 2015</h2>
-              <h1 class="cards__title">wine Tasting</h1>
+              <span class="cards__title-before">10 february 2015</span>
+              <span class="cards__title">wine Tasting</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
             </div>
@@ -324,8 +342,8 @@
             <div class="cards__box-img"><img class="cards__img cards__img-adaptive1250" src="img/ivent/ivent-img-2.png"
                 alt=""></div>
             <div class="cards__text">
-              <h2 class="cards__title-before">15 february 2015</h2>
-              <h1 class="cards__title">chocolate event</h1>
+              <span class="cards__title-before">15 february 2015</span>
+              <span class="cards__title">chocolate event</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
             </div>
@@ -336,8 +354,8 @@
           <div class="cards__ivent">
             <div class="cards__box-img"><img class="cards__img" src="img/ivent/ivent-img-3.png" alt=""></div>
             <div class="cards__text">
-              <h2 class="cards__title-before">25 february 2015</h2>
-              <h1 class="cards__title">strawberry decoration</h1>
+              <span class="cards__title-before">25 february 2015</span>
+              <span class="cards__title">strawberry decoration</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
             </div>
@@ -351,7 +369,7 @@
     <div class="map">
       <img class="map__img" src="img/map/map-img.png" alt="map">
       <div class="map__contacts">
-        <h1 class="map__title">primavera</h1>
+        <span class="map__title">primavera</span>
         <span class="map__adress">Frederic Chopin St. 454/52, 00-000 Rome</span>
         <div class="map__phone">
           <a href="tel:+79121234567">P. +7 912 123-45-67 - </a>
@@ -371,26 +389,25 @@
         <li class="footer__li"><a class="footer__link" href="#restaurant">restaurant</a></li>
         <li class="footer__li"><a class="footer__link" href="#menu">menu</a></li>
         <li class="footer__li"><a class="footer__link" href="#reservation">reservation</a></li>
-        <li class="footer__li"><a class="footer__link" href="#events">ivents</a></li>
+        <li class="footer__li"><a class="footer__link" href="#events">events</a></li>
         <li class="footer__li"><a class="footer__link" href="#contacts">contact</a></li>
       </ul>
     </nav>
     <div class="footer__social social">
-      <div class="social__wrap">
-        <a href="#" class="social__icons"><img src="img/social/facebook-gr.png" alt="social"></a>
-        <a href="#" class="social__icons"><img src="img/social/tweet-gr.png" alt="social"></a>
-        <a href="#" class="social__icons"><img src="img/social/google+-gr.png" alt="social"></a>
+      <div class="social__wrap-footer">
+        <a href="#" class="social__icons-f"><img src="img/social/facebook-gr.png" alt="social"></a>
+        <a href="#" class="social__icons-f"><img src="img/social/tweet-gr.png" alt="social"></a>
+        <a href="#" class="social__icons-f"><img src="img/social/google+-gr.png" alt="social"></a>
       </div>
-    </div>
     </div>
   </footer>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/animation-following.js"></script>
+  <script src="js/adaptive-menu.js"></script>
 
 </body>
 

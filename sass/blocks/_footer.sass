@@ -19,6 +19,10 @@ footer
     color: #000000
     &:hover
       color: #a84a3e
+.social__wrap-footer
+  display: flex
+  justify-content: space-between
+  width: 130px
 @media (max-width: 899px)
   .footer
     margin: auto 30px
@@ -38,7 +42,10 @@ footer
       margin-bottom: 15px
       &:last-child
         margin-bottom: 0
-  .social__wrap
+  .social__wrap-footer
     display: flex
     flex-direction: column
     text-align: center
+  .social__icons-f:hover
+    transform: translateX(10px)
+    transition: 0.5s

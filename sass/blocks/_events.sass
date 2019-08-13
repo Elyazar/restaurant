@@ -1,4 +1,4 @@
-.ivents
+.events
   display: flex
   flex-direction: column
   justify-content: center
@@ -11,13 +11,17 @@
   display: flex
   margin-top: 135px
   margin-bottom: 200px
-  &__ivent
+  &__event
     margin-right: 30px
     &:last-child
       margin-right: 0
   &__text
+    display: flex
+    flex-direction: column
     margin: 67px auto
     max-width: 315px
+  &__text span
+    display: block
   &__title-before
     font-size: 12px
     +roboto
@@ -49,5 +53,5 @@
       margin: auto
     &__img-default
       display: none
-    &__ivent
+    &__event
       margin-right: 0

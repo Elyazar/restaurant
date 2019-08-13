@@ -23,3 +23,16 @@
 @mixin roboto {
   font-family: 'Roboto';
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+@include placeholder {
+  color: #ffffff;
+  font-family: roboto;
+  font-size: 14px;
+}
