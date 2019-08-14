@@ -4,6 +4,7 @@
   &-img
     height: 100vh
     width: 100%
+    object-fit: cover
 .header
   position: relative
 .anchor
@@ -274,4 +275,28 @@
     opacity: 0
   .menu__active
     transform: scale(1) translateY(0%)
-    opacity: 1     
+    opacity: 1   
+@media (max-width: 459px)
+  .layer-slide
+    top: 7%
+    margin: 0
+    left: 10%
+  .logo
+    &__title
+      font-size: 85px
+    &__subtitle
+      display: none
+  .social
+    display: none
+@media (max-width: 425px)
+  .menu
+    max-width: 70%
+@media (max-width: 339px)
+  .layer-slide
+    top: 8%
+  .logo
+    &__title
+      font-size: 65px
+@media (max-width: 320px)
+  .menu
+    max-width: 90%

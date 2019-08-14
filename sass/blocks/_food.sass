@@ -106,14 +106,13 @@
       width: 80px
       height: 80px
     &__type
+      flex-wrap: wrap
       max-width: 450px
       margin-top: 40px
-@media (max-width: 320px)
+@media (max-width: 379px)
   .food
-    &__icon
-      width: 65px
-      height: 65px
-    &__black, &__white
-      left: 50%
-      top: 50%
-      transform: translate(-50%, -50%)
+    &__type
+      min-height: 200px
+      justify-content: space-around
+      max-width: 239px
+      margin: 70px auto

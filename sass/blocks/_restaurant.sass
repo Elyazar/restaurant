@@ -79,6 +79,8 @@
     &__box-text
       width: 120px
       height: 120px
+    &__text
+      font-size: 14px
     &__img
       width: 50%
 @media (max-width: 707px)
@@ -106,8 +108,34 @@
     &__box-text
       width: 90px
       height: 90px
+    &__text
+      font-size: 10px
     &__img
       width: 50%
   .description-wrap
     &__subtitle
       margin-bottom: 60px
+@media (max-width: 425px)
+  .servises
+    &__type
+      width: 75px
+      height: 75px
+    &__box-text
+      width: 75px
+      height: 75px
+    &__text
+      font-size: 8px
+@media (max-width: 359px)
+  .servises
+    flex-direction: column
+    height: 100vh
+    &__type
+      width: 100px
+      height: 100px
+      margin: auto
+      align-content: space-between
+    &__box-text
+      width: 100px
+      height: 100px
+    &__text
+      font-size: 12px

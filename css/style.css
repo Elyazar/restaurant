@@ -144,6 +144,8 @@
 .slv__slide-img {
   height: 100vh;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header {
@@ -560,6 +562,44 @@
   }
 }
 
+@media (max-width: 459px) {
+  .layer-slide {
+    top: 7%;
+    margin: 0;
+    left: 10%;
+  }
+  .logo__title {
+    font-size: 85px;
+  }
+  .logo__subtitle {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 339px) {
+  .layer-slide {
+    top: 8%;
+  }
+  .logo__title {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu {
+    max-width: 90%;
+  }
+}
+
 .description-wrap__subtitle {
   margin-bottom: 100px;
 }
@@ -688,6 +728,9 @@
     width: 120px;
     height: 120px;
   }
+  .servises__text {
+    font-size: 14px;
+  }
   .servises__img {
     width: 50%;
   }
@@ -731,11 +774,52 @@
     width: 90px;
     height: 90px;
   }
+  .servises__text {
+    font-size: 10px;
+  }
   .servises__img {
     width: 50%;
   }
   .description-wrap__subtitle {
     margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .servises__type {
+    width: 75px;
+    height: 75px;
+  }
+  .servises__box-text {
+    width: 75px;
+    height: 75px;
+  }
+  .servises__text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 359px) {
+  .servises {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  .servises__type {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .servises__box-text {
+    width: 100px;
+    height: 100px;
+  }
+  .servises__text {
+    font-size: 12px;
   }
 }
 
@@ -922,21 +1006,20 @@
     height: 80px;
   }
   .food__type {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 450px;
     margin-top: 40px;
   }
 }
 
-@media (max-width: 320px) {
-  .food__icon {
-    width: 65px;
-    height: 65px;
-  }
-  .food__black, .food__white {
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+@media (max-width: 379px) {
+  .food__type {
+    min-height: 200px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 239px;
+    margin: 70px auto;
   }
 }
 
