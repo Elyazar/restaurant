@@ -169,12 +169,6 @@
     color: rgb(255, 255, 255);
 }
 @media (max-width: 768px){
-    /*.slick-dots{
-        background-color: rgba(255,255,255,0.4);
-        border-radius: 45%;
-    }
-    .slick-dots li{
-    }*/
     .slick-dots li button{
         width: 10px;
         height: 10px;
@@ -182,5 +176,10 @@
     .slick-dots li button:before{
         width: 10px;
         height: 10px;
+    }
+}
+@media (max-width: 320px){
+    .slick-dots{
+        right: 10px;
     }
 }

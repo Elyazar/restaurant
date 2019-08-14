@@ -14,6 +14,7 @@
   <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fm.revealator.jquery.css">
 
   <!-- font link -->
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
   <header id="header" class="header">
     <nav class="menu__wrap">
       <ul class="menu">
-        <li class="menu__li"><a href="#header" class="menu__link">home</a></li>
+        <li class="menu__li revealator-slidedown"><a href="#header" class="menu__link">home</a></li>
         <li class="menu__li"><a href="#restaurant" class="menu__link">servise</a></li>
         <li class="menu__li"><a href="#menu" class="menu__link">menu</a></li>
         <li class="menu__li"><a href="#reservation" class="menu__link">reservation</a></li>
@@ -103,7 +104,7 @@
   <section id="restaurant">
     <div class="restaurant">
       <div class="container">
-        <div class="description-wrap">
+        <div class="description-wrap revealator-slidedown revealator-delay1 revealator-once">
           <h1 class="description-wrap__title title">restaurant</h1>
           <div class="description-wrap__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
           <p class="description-wrap__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit
@@ -112,7 +113,7 @@
             architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
             odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>
         </div>
-        <div class="servises">
+        <div class="servises revealator-slideright revealator-delay2 revealator-once">
 
           <div class="servises__type">
             <img class="servises__img" src="img/servises/img-1.png" alt="">
@@ -143,19 +144,21 @@
 
         </div>
         <div class="galery">
-          <div class="galery__block-left galery__img-size1">
+          <div class="galery__block-left galery__img-size1 revealator-zoomin revealator-once">
             <img src="img/servises/img1.png" alt="photo" class="galery__img">
           </div>
           <div class="galery__block-right">
             <div class="galery__block-rtop">
-              <div class="galery__img-size2">
+              <div class="galery__img-size2 revealator-zoomout revealator-once">
                 <img src="img/servises/img2.png" alt="photo" class="galery__img-1">
               </div>
-              <div class="galery__img-size3">
+              <div class="galery__img-size3 revealator-zoomout revealator-once">
                 <img src="img/servises/img3.png" alt="photo" class="galery__img-2">
               </div>
             </div>
-            <div class="galery__img-size4"><img src="img/servises/img4.png" alt="photo" class="galery__img"></div>
+            <div class="galery__img-size4 revealator-zoomout revealator-once">
+              <img src="img/servises/img4.png" alt="photo" class="galery__img">
+            </div>
           </div>
         </div>
       </div>
@@ -165,14 +168,14 @@
   <section id="menu">
     <div class="container">
       <div class="food">
-        <div class="description-wrap">
+        <div class="description-wrap revealator-slideleft revealator-once">
           <h2 class="food__title title">menu</h2>
           <div class="food__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
           <p class="food__subtitle subtitle">showcase your site visitors the best menu, specialty restaurants to
             attract your potential customers</p>
         </div>
 
-        <div class="food__type">
+        <div class="food__type revealator-slidedown revealator-duration9 revealator-once">
 
           <div class="food__icon">
             <img class="food__black" src="img/food/img-1.png" alt="">
@@ -197,7 +200,7 @@
         <!-- /.food__type -->
         <div class="price">
           <div class="price__left">
-            <div class="price__card">
+            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
               <div><img src="img/food/img1.png" alt="" class="price__img"></div>
               <div class="prise__text">
                 <div><span class="price__title">Fresh salad simple</span></div>
@@ -212,8 +215,8 @@
               <!-- /.prise__text -->
             </div>
             <!-- /.price__card -->
-            <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
-            <div class="price__card">
+            <div class="food__separating revealator-fade revealator-duration4 revealator-once"><img src="img/food/separator.png" alt=""></div>
+            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
               <div><img src="img/food/img2.png" alt="" class="price__img"></div>
               <div class="prise__text">
                 <div><span class="price__title">Fresh salad simple</span></div>
@@ -231,7 +234,7 @@
             <div class="food__separating-adaptive1199"><img src="img/food/separator.png" alt=""></div>
           </div>
           <div class="price__right">
-            <div class="price__card">
+            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
               <div><img src="img/food/img3.png" alt="" class="price__img"></div>
               <div class="prise__text">
                 <div><span class="price__title">Fresh salad simple</span></div>
@@ -247,7 +250,7 @@
             </div>
             <!-- /.price__card -->
             <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
-            <div class="price__card">
+            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
               <div><img src="img/food/img4.png" alt="" class="price__img"></div>
               <div class="prise__text">
                 <div><span class="price__title">Fresh salad simple</span></div>
@@ -266,7 +269,7 @@
         </div>
         <!-- /.price -->
         <div class="wrap-position">
-          <button class="button price__button">see more</button>
+          <button class="button price__button revealator-zoomout revealator-once">see more</button>
         </div>
       </div>
       <!-- /.food -->
@@ -278,22 +281,24 @@
     <div class="form">
       <div class="container1">
         <div class="reservation">
-          <h3 class="reservation__title title">reservation</h3>
-          <!-- /.reservation__title title -->
-          <span class="reservation__subtitle subtitle">quick and easy to book a table by phone or reservation
+          <h3 class="reservation__title title revealator-slidedown revealator-once">reservation</h3>
+          <span class="reservation__subtitle subtitle revealator-slidedown revealator-once">quick and easy to book a table by phone or reservation
             form</span>
-          <!-- /.reservation__subtitle subtitle -->
           <div class="contacts">
-            <a class="contacts__number" href="tel:+79121234567">+7 912 123-45-67</a>
-            <button class="contacts__button"><img class="contacts__img" src="img/form/phone-icon.png"
-                alt="phone"></button>
-            <!-- /.contacts__button -->
-            <a class="contacts__number" href="tel:+79121234567">+7 912 123-45-67</a>
+            
+            <a class="contacts__number revealator-slideright revealator-once" href="tel:+79121234567">+7 912 123-45-67</a>
+            
+            <button class="contacts__button revealator-zoomout revealator-once">
+              <img class="contacts__img" src="img/form/phone-icon.png" alt="phone">
+              </button>
+
+            <a class="contacts__number revealator-slideleft revealator-once" href="tel:+79121234567">+7 912 123-45-67</a>
+
           </div>
           <!-- /.contacts -->
           <form action="">
             <img class="form__bg" src="img/form/form-bg.png" alt="">
-            <div class="recording">
+            <div class="recording revealator-slideup revealator-once">
               <div class="recording__input-box">
                 <input type="text" placeholder="Name" class="recording__input">
               </div>
@@ -307,7 +312,7 @@
               </div>
             </div>
             <!-- /.recording -->
-            <div class="wrap-position"><button class="button reservation__button">book a table</button>
+            <div class="wrap-position revealator-zoomin revealator-once"><button class="button reservation__button">book a table</button>
               <!-- /.button reservation__button -->
             </div>
           </form>
@@ -322,15 +327,15 @@
   <section id="events">
     <div class="events">
       <div class="container">
-        <h4 class="events__title title">events</h4>
-        <span class="events__subtitle subtitle">Present in an elegant way events in your restaurant, to encourage
+        <h4 class="events__title title revealator-zoomout revealator-once">events</h4>
+        <span class="events__subtitle subtitle revealator-zoomout revealator-once">Present in an elegant way events in your restaurant, to encourage
           visitors to visit</span>
 
         <div class="cards">
 
           <div class="cards__event">
-            <div class="cards__box-img"><img class="cards__img" src="img/event/event-img-1.png" alt=""></div>
-            <div class="cards__text">
+            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img" src="img/event/event-img-1.png" alt=""></div>
+            <div class="cards__text revealator-slideright revealator-once">
               <span class="cards__title-before">10 february 2015</span>
               <span class="cards__title">wine Tasting</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -339,21 +344,21 @@
           </div>
 
           <div class="cards__event">
-            <div class="cards__box-img"><img class="cards__img cards__img-adaptive1250" src="img/event/event-img-2.png"
+            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img cards__img-adaptive1250" src="img/event/event-img-2.png"
                 alt=""></div>
-            <div class="cards__text">
+            <div class="cards__text revealator-slideright revealator-once">
               <span class="cards__title-before">15 february 2015</span>
               <span class="cards__title">chocolate event</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
             </div>
-            <div class="cards__box-img"><img class="cards__img cards__img-default" src="img/event/event-img-2.png"
+            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img cards__img-default" src="img/event/event-img-2.png"
                 alt=""></div>
           </div>
 
           <div class="cards__event">
-            <div class="cards__box-img"><img class="cards__img" src="img/event/event-img-3.png" alt=""></div>
-            <div class="cards__text">
+            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img" src="img/event/event-img-3.png" alt=""></div>
+            <div class="cards__text revealator-slideright revealator-once">
               <span class="cards__title-before">25 february 2015</span>
               <span class="cards__title">strawberry decoration</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -367,8 +372,8 @@
 
   <section id="contacts">
     <div class="map">
-      <img class="map__img" src="img/map/map-img.png" alt="map">
-      <div class="map__contacts">
+      <img class="map__img revealator-zoomout revealator-once" src="img/map/map-img.png" alt="map">
+      <div class="map__contacts revealator-slideright revealator-once">
         <span class="map__title">primavera</span>
         <span class="map__adress">Frederic Chopin St. 454/52, 00-000 Rome</span>
         <div class="map__phone">
@@ -376,7 +381,7 @@
           <a href="tel:+79121234567">+7 912 123-45-67</a>
         </div>
       </div>
-      <iframe
+      <iframe class="revealator-slideup revealator-once"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.229733262998!2d12.491487535460234!3d41.90941987718345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1559936349288!5m2!1sru!2sua"
         width="100%" height="425px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
@@ -408,6 +413,7 @@
   <script src="js/script.js"></script>
   <script src="js/animation-following.js"></script>
   <script src="js/adaptive-menu.js"></script>
+  <script src="js/fm.revealator.jquery.js"></script>
 
 </body>
 

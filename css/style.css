@@ -1451,6 +1451,7 @@ footer {
   height: 210px;
   text-align: center;
   padding: 65px 50px 60px 50px;
+  z-index: 2;
 }
 
 .map__title {
