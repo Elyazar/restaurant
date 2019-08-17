@@ -14,7 +14,7 @@
   <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/fm.revealator.jquery.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- font link -->
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
       </ul>
     </nav>
 
-    <button class="menu__button">
+    <button class="menu__button" data-aos="flip-right" data-aos-duration="1000">
       <a class="menu__btn" href="#">
         <span></span>
       </a>
@@ -104,7 +104,7 @@
   <section id="restaurant">
     <div class="restaurant">
       <div class="container">
-        <div class="description-wrap revealator-slidedown revealator-delay1 revealator-once">
+        <div class="description-wrap" data-aos="fade-down" data-aos-duration="1000"> 
           <h1 class="description-wrap__title title">restaurant</h1>
           <div class="description-wrap__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
           <p class="description-wrap__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit
@@ -113,50 +113,56 @@
             architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
             odit aut fugit, sed quia consequuntur magni dolores eos qui.</p>
         </div>
-        <div class="servises revealator-slideright revealator-delay2 revealator-once">
+        <div class="servises">
 
-          <div class="servises__type">
-            <img class="servises__img" src="img/servises/img-1.png" alt="">
-            <div class="servises__box-text">
-              <span class="servises__text">
-                originally <br> roasted coffee
-              </span>
-            </div>
+          <div data-aos="flip-right" data-aos-duration="1500">
+              <div class="servises__type">
+                  <img class="servises__img" src="img/servises/img-1.png" alt="">
+                  <div class="servises__box-text">
+                    <span class="servises__text">
+                      originally <br> roasted coffee
+                    </span>
+                  </div>
+                </div>
           </div>
 
-          <div class="servises__type">
-            <img class="servises__img" src="img/servises/img-2.png" alt="">
-            <div class="servises__box-text">
-              <span class="servises__text">
-                originally <br> roasted coffee
-              </span>
-            </div>
+          <div data-aos="flip-right" data-aos-duration="1500">
+              <div class="servises__type">
+                  <img class="servises__img" src="img/servises/img-2.png" alt="">
+                  <div class="servises__box-text">
+                    <span class="servises__text">
+                      originally <br> roasted coffee
+                    </span>
+                  </div>
+                </div>
           </div>
 
-          <div class="servises__type">
-            <img class="servises__img" src="img/servises/img-3.png" alt="">
-            <div class="servises__box-text">
-              <span class="servises__text">
-                originally <br> roasted coffee
-              </span>
-            </div>
+          <div data-aos="flip-right" data-aos-duration="1500">
+              <div class="servises__type">
+                  <img class="servises__img" src="img/servises/img-3.png" alt="">
+                  <div class="servises__box-text">
+                    <span class="servises__text">
+                      originally <br> roasted coffee
+                    </span>
+                  </div>
+                </div>
           </div>
 
         </div>
         <div class="galery">
-          <div class="galery__block-left galery__img-size1 revealator-zoomin revealator-once">
+          <div class="galery__block-left galery__img-size1" data-aos="fade-right">
             <img src="img/servises/img1.png" alt="photo" class="galery__img">
           </div>
           <div class="galery__block-right">
             <div class="galery__block-rtop">
-              <div class="galery__img-size2 revealator-zoomout revealator-once">
+              <div class="galery__img-size2" data-aos="fade-down">
                 <img src="img/servises/img2.png" alt="photo" class="galery__img-1">
               </div>
-              <div class="galery__img-size3 revealator-zoomout revealator-once">
+              <div class="galery__img-size3" data-aos="fade-left">
                 <img src="img/servises/img3.png" alt="photo" class="galery__img-2">
               </div>
             </div>
-            <div class="galery__img-size4 revealator-zoomout revealator-once">
+            <div class="galery__img-size4" data-aos="fade-up">
               <img src="img/servises/img4.png" alt="photo" class="galery__img">
             </div>
           </div>
@@ -168,29 +174,29 @@
   <section id="menu">
     <div class="container">
       <div class="food">
-        <div class="description-wrap revealator-slideleft revealator-once">
+        <div class="description-wrap" data-aos="fade-down">
           <h2 class="food__title title">menu</h2>
           <div class="food__title-img title-img"><img src="img/title-img/img.png" alt=""></div>
           <p class="food__subtitle subtitle">showcase your site visitors the best menu, specialty restaurants to
             attract your potential customers</p>
         </div>
 
-        <div class="food__type revealator-slidedown revealator-duration9 revealator-once">
+        <div class="food__type">
 
-          <div class="food__icon">
+          <div class="food__icon" data-aos="flip-right" data-aos-duration='1000' data-aos-delay='200'>
             <img class="food__black" src="img/food/img-1.png" alt="">
             <img class="food__white" src="img/food/img-1w.png" alt="">
           </div>
-          <div class="food__icon">
+          <div class="food__icon" data-aos="flip-right" data-aos-duration='1000' data-aos-delay='250'>
             <img class="food__black" src="img/food/img-2.png" alt="">
             <img class="food__white" src="img/food/img-2w.png" alt="">
           </div>
 
-          <div class="food__icon">
+          <div class="food__icon" data-aos="flip-right" data-aos-duration='1000' data-aos-delay='300'>
             <img class="food__black" src="img/food/img-3.png" alt="">
             <img class="food__white" src="img/food/img-3w.png" alt="">
           </div>
-          <div class="food__icon">
+          <div class="food__icon" data-aos="flip-right" data-aos-duration='1000' data-aos-delay='350'>
             <img class="food__black" src="img/food/img-4.png" alt="">
             <img class="food__white" src="img/food/img-4w.png" alt="">
           </div>
@@ -200,9 +206,11 @@
         <!-- /.food__type -->
         <div class="price">
           <div class="price__left">
-            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
-              <div><img src="img/food/img1.png" alt="" class="price__img"></div>
-              <div class="prise__text">
+            <div class="price__card">
+              <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                <img src="img/food/img1.png" alt="" class="price__img">
+              </div>
+              <div class="prise__text" data-aos="flip-down" data-aos-duration='1000'>
                 <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
                 <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
@@ -215,10 +223,12 @@
               <!-- /.prise__text -->
             </div>
             <!-- /.price__card -->
-            <div class="food__separating revealator-fade revealator-duration4 revealator-once"><img src="img/food/separator.png" alt=""></div>
-            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
-              <div><img src="img/food/img2.png" alt="" class="price__img"></div>
-              <div class="prise__text">
+            <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
+            <div class="price__card   ">
+              <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                <img src="img/food/img2.png" alt="" class="price__img">
+              </div>
+              <div class="prise__text" data-aos="flip-down" data-aos-duration='1000'>
                 <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
                 <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
@@ -234,9 +244,11 @@
             <div class="food__separating-adaptive1199"><img src="img/food/separator.png" alt=""></div>
           </div>
           <div class="price__right">
-            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
-              <div><img src="img/food/img3.png" alt="" class="price__img"></div>
-              <div class="prise__text">
+            <div class="price__card   ">
+              <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                <img src="img/food/img3.png" alt="" class="price__img">
+              </div>
+              <div class="prise__text" data-aos="flip-down" data-aos-duration='1000'>
                 <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
                 <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
@@ -250,9 +262,11 @@
             </div>
             <!-- /.price__card -->
             <div class="food__separating"><img src="img/food/separator.png" alt=""></div>
-            <div class="price__card revealator-zoomin revealator-duration4 revealator-once">
-              <div><img src="img/food/img4.png" alt="" class="price__img"></div>
-              <div class="prise__text">
+            <div class="price__card   ">
+              <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                <img src="img/food/img4.png" alt="" class="price__img">
+              </div>
+              <div class="prise__text" data-aos="flip-down" data-aos-duration='1000'>
                 <div><span class="price__title">Fresh salad simple</span></div>
                 <!-- /.price__title -->
                 <div><span class="price__subtitle subtitle">tomatoes, cucumber, fresh lettuce, olives</span></div>
@@ -268,8 +282,8 @@
           </div>
         </div>
         <!-- /.price -->
-        <div class="wrap-position">
-          <button class="button price__button revealator-zoomout revealator-once">see more</button>
+        <div class="wrap-position" data-aos="flip-down" data-aos-duration="1000">
+          <button class="button price__button">see more</button>
         </div>
       </div>
       <!-- /.food -->
@@ -281,38 +295,39 @@
     <div class="form">
       <div class="container1">
         <div class="reservation">
-          <h3 class="reservation__title title revealator-slidedown revealator-once">reservation</h3>
-          <span class="reservation__subtitle subtitle revealator-slidedown revealator-once">quick and easy to book a table by phone or reservation
+          <h3 class="reservation__title title" data-aos="fade-down" data-aos-duration="1000">reservation</h3>
+          <span class="reservation__subtitle subtitle" data-aos="fade-down" data-aos-duration="1000">quick and easy to book a table by phone or reservation
             form</span>
           <div class="contacts">
             
-            <a class="contacts__number revealator-slideright revealator-once" href="tel:+79121234567">+7 912 123-45-67</a>
+            <a class="contacts__number" href="tel:+79121234567" data-aos="fade-right" data-aos-duration="1000">+7 912 123-45-67</a>
             
-            <button class="contacts__button revealator-zoomout revealator-once">
+            <button class="contacts__button" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="-200">
               <img class="contacts__img" src="img/form/phone-icon.png" alt="phone">
               </button>
 
-            <a class="contacts__number revealator-slideleft revealator-once" href="tel:+79121234567">+7 912 123-45-67</a>
+            <a class="contacts__number" href="tel:+79121234567" data-aos="fade-left" data-aos-duration="1000">+7 912 123-45-67</a>
 
           </div>
           <!-- /.contacts -->
           <form action="">
             <img class="form__bg" src="img/form/form-bg.png" alt="">
-            <div class="recording revealator-slideup revealator-once">
-              <div class="recording__input-box">
+            <div class="recording">
+              <div class="recording__input-box" data-aos="flip-down" data-aos-duration="1000">
                 <input type="text" placeholder="Name" class="recording__input">
               </div>
-              <div class="recording__input-box">
+              <div class="recording__input-box" data-aos="flip-up" data-aos-duration="1000">
                 <input type="text" placeholder="Day" onfocus="(this.type='date')"
                   onblur="if(this.value==''){this.type='text'}" class="recording__input">
               </div>
-              <div class="recording__input-box">
+              <div class="recording__input-box" data-aos="flip-down" data-aos-duration="1000">
                 <input type="text" placeholder="Hour" onfocus="(this.type='time')"
                   onblur="if(this.value==''){this.type='text'}" class="recording__input">
               </div>
             </div>
             <!-- /.recording -->
-            <div class="wrap-position revealator-zoomin revealator-once"><button class="button reservation__button">book a table</button>
+            <div class="wrap-position" data-aos="flip-down" data-aos-duration="1000" data-aos-offset="-s100">
+              <button class="button reservation__button">book a table</button>
               <!-- /.button reservation__button -->
             </div>
           </form>
@@ -327,15 +342,17 @@
   <section id="events">
     <div class="events">
       <div class="container">
-        <h4 class="events__title title revealator-zoomout revealator-once">events</h4>
-        <span class="events__subtitle subtitle revealator-zoomout revealator-once">Present in an elegant way events in your restaurant, to encourage
+        <h4 class="events__title title" data-aos="zoom-in" data-aos-duration="1000">events</h4>
+        <span class="events__subtitle subtitle" data-aos="zoom-in" data-aos-duration="1000">Present in an elegant way events in your restaurant, to encourage
           visitors to visit</span>
 
         <div class="cards">
 
           <div class="cards__event">
-            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img" src="img/event/event-img-1.png" alt=""></div>
-            <div class="cards__text revealator-slideright revealator-once">
+            <div class="cards__box-img" data-aos="fade-down-right" data-aos-duration="1000">
+              <img class="cards__img" src="img/event/event-img-1.png" alt="">
+            </div>
+            <div class="cards__text" data-aos="fade-up-right" data-aos-duration="1000">
               <span class="cards__title-before">10 february 2015</span>
               <span class="cards__title">wine Tasting</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -344,21 +361,25 @@
           </div>
 
           <div class="cards__event">
-            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img cards__img-adaptive1250" src="img/event/event-img-2.png"
-                alt=""></div>
-            <div class="cards__text revealator-slideright revealator-once">
+            <div class="cards__box-img" data-aos="fade-up-left" data-aos-duration="1000">
+              <img class="cards__img cards__img-adaptive1250" src="img/event/event-img-2.png" alt="">
+              </div>
+            <div class="cards__text" data-aos="fade-down" data-aos-duration="1000">
               <span class="cards__title-before">15 february 2015</span>
               <span class="cards__title">chocolate event</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.</span>
             </div>
-            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img cards__img-default" src="img/event/event-img-2.png"
-                alt=""></div>
+            <div class="cards__box-img" data-aos="fade-up" data-aos-duration="1000">
+              <img class="cards__img cards__img-default" src="img/event/event-img-2.png" alt="">
+              </div>
           </div>
 
           <div class="cards__event">
-            <div class="cards__box-img revealator-slideleft revealator-once"><img class="cards__img" src="img/event/event-img-3.png" alt=""></div>
-            <div class="cards__text revealator-slideright revealator-once">
+            <div class="cards__box-img" data-aos="fade-down-left" data-aos-duration="1000">
+              <img class="cards__img" src="img/event/event-img-3.png" alt="">
+            </div>
+            <div class="cards__text" data-aos="fade-up-left" data-aos-duration="1000">
               <span class="cards__title-before">25 february 2015</span>
               <span class="cards__title">strawberry decoration</span>
               <span class="cards__subtitle subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -372,8 +393,8 @@
 
   <section id="contacts">
     <div class="map">
-      <img class="map__img revealator-zoomout revealator-once" src="img/map/map-img.png" alt="map">
-      <div class="map__contacts revealator-slideright revealator-once">
+      <img class="map__img" src="img/map/map-img.png" alt="map" data-aos="flip-down" data-aos-delay="-200" data-aos-duration="1000">
+      <div class="map__contacts" data-aos="flip-right" data-aos-duration="1000">
         <span class="map__title">primavera</span>
         <span class="map__adress">Frederic Chopin St. 454/52, 00-000 Rome</span>
         <div class="map__phone">
@@ -381,9 +402,10 @@
           <a href="tel:+79121234567">+7 912 123-45-67</a>
         </div>
       </div>
-      <iframe class="revealator-slideup revealator-once"
+      <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2969.229733262998!2d12.491487535460234!3d41.90941987718345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1559936349288!5m2!1sru!2sua"
-        width="100%" height="425px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="100%" height="425px" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
     </div>
   </section>
 
@@ -411,9 +433,10 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/animation-following.js"></script>
+  <script src="js/animation-link.js"></script>
   <script src="js/adaptive-menu.js"></script>
-  <script src="js/fm.revealator.jquery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/aos-appear.js"></script>
 
 </body>
 

@@ -22,6 +22,7 @@
     position: relative
     border: 2px solid #000000
     border-radius: 8px
+    transition: 0.5s
     &:hover
       background-color: rgba(172,83,72,0.95)
       border-color: #A84A3E
@@ -44,6 +45,10 @@
 
 .galery
   display: flex
+  &__img, &__img-1, &__img-2
+    transition: 0.5s
+    &:hover
+      transform: scale(1.04)
   &__img
     width: 100%
     height: auto

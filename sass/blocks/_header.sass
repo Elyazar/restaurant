@@ -20,10 +20,10 @@
   margin: auto
   bottom: 65px
   transform: rotate(-45deg)
+  transition: 0.7s
   &:hover
     background: #ac5348
     border-color: #a84a3e
-    transition: 0.7s
   &__arrow
     position: absolute
     left: 0
@@ -34,6 +34,7 @@
     z-index: 112
     transform: rotate(45deg)
     animation: pulsing 2.5s infinite
+    animation-direction: alternate
 @keyframes pulsing
   0%
     transform: translate(10px, -10px) rotate(45deg)
@@ -52,9 +53,9 @@
   max-width: 830px
   &__li
     list-style: none
+    transition: 0.7s
     &:hover
       transform: translateY(5px)
-      transition: 0.7s
   &__link
     padding: 14px 38px
     text-decoration: none
@@ -188,9 +189,9 @@
     justify-content: space-between
     width: 130px
   &__icons
+    transition: 0.5s
     &:hover
       transform: translateY(-10px)
-      transition: 0.5s
 .social__menu
   display: none
   margin: 10%
@@ -200,9 +201,9 @@
   justify-content: space-between
   width: 130px
 .social__icons
+  transition: 0.5s
   &:hover
     transform: translateY(-10px)
-    transition: 0.5s
 @media (max-width: 1024px)
   .logo
     &__title
@@ -228,9 +229,10 @@
     margin: auto 0
     height: 265px
     z-index: 999
-    &__li:hover
-      transform: translateX(5px)
+    &__li
       transition: 0.7s
+      &:hover
+        transform: translateX(5px)
 @media (max-width: 768px)
   .logo
     &__title

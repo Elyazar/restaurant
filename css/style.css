@@ -119,6 +119,8 @@
   font-size: 14px;
   background: none;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .recording__input {
@@ -166,13 +168,13 @@
   bottom: 65px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .anchor:hover {
   background: #ac5348;
   border-color: #a84a3e;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
 }
 
 .anchor__arrow {
@@ -187,6 +189,8 @@
           transform: rotate(45deg);
   -webkit-animation: pulsing 2.5s infinite;
           animation: pulsing 2.5s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @-webkit-keyframes pulsing {
@@ -229,13 +233,13 @@
 
 .menu__li {
   list-style: none;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .menu__li:hover {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
 }
 
 .menu__link {
@@ -423,11 +427,14 @@
   width: 130px;
 }
 
+.social__icons {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .social__icons:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .social__menu {
@@ -446,11 +453,14 @@
   width: 130px;
 }
 
+.social__icons {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .social__icons:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 @media (max-width: 1024px) {
@@ -487,11 +497,13 @@
     height: 265px;
     z-index: 999;
   }
+  .menu__li {
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
   .menu__li:hover {
     -webkit-transform: translateX(5px);
             transform: translateX(5px);
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
   }
 }
 
@@ -636,6 +648,8 @@
   position: relative;
   border: 2px solid #000000;
   border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .servises__box-text:hover {
@@ -668,6 +682,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.galery__img, .galery__img-1, .galery__img-2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.galery__img:hover, .galery__img-1:hover, .galery__img-2:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .galery__img {
@@ -856,6 +880,8 @@
   position: relative;
   border: 2px solid #000000;
   border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .food__icon:hover {
@@ -1033,6 +1059,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
 }
 
@@ -1418,11 +1446,13 @@ footer {
             flex-direction: column;
     text-align: center;
   }
+  .social__icons-f {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
   .social__icons-f:hover {
     -webkit-transform: translateX(10px);
             transform: translateX(10px);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
   }
 }
 
