@@ -578,9 +578,9 @@
   .layer-slide {
     top: 7%;
     margin: 0;
-    left: 10%;
   }
   .logo__title {
+    padding-left: 10%;
     font-size: 85px;
   }
   .logo__subtitle {
